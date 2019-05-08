@@ -1,3 +1,13 @@
+body{
+background-color: #181616;
+background-image: url("../images/diagmonds.png");
+}
+
+.main-content{
+  background-color: #f7f7f7;
+background-image: url("https://www.transparenttextures.com/patterns/mirrored-squares.png");
+}
+
 /* Required height of parents of the Half Page Carousel for proper displaying carousel itself */
 html,
 body,
@@ -18,11 +28,30 @@ body,
   .carousel {
     height: 100%; } }
 
-/* Footer color for sake of consistency with Navbar */
-.page-footer {
-  background-color: #929FBA; }
+    html,
+    body,
+    header,
+    .carousel {
+      height: 50vh;
+    }
+    @media (max-width: 740px) {
+      html,
+      body,
+      header,
+      .carousel {
+        height: 50vh;
+      }
+    }
+    @media (min-width: 800px) and (max-width: 850px) {
+      html,
+      body,
+      header,
+      .carousel {
+        height: 50vh;
+      }
+    }
 
-
+/*sidebar and navigation*/
   
 #sidebar {
     width: 250px;
