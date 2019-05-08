@@ -1,0 +1,87 @@
+/* Required height of parents of the Half Page Carousel for proper displaying carousel itself */
+html,
+body,
+.view {
+  height: 100%; }
+
+/* Half Page Carousel itself*/
+.carousel {
+  height: 50%; }
+  .carousel .carousel-inner {
+    height: 100%; }
+    .carousel .carousel-inner .carousel-item,
+    .carousel .carousel-inner .active {
+      height: 100%; }
+
+/* Adjustment for mobile devices*/
+@media (max-width: 776px) {
+  .carousel {
+    height: 100%; } }
+
+/* Footer color for sake of consistency with Navbar */
+.page-footer {
+  background-color: #929FBA; }
+
+
+  
+#sidebar {
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    height: 100vh;
+    z-index: 999;
+    background: var(--light);
+    transition: all 0.3s;
+    overflow-y: scroll;
+    color: var(--dark);
+  }
+  
+  .sidebar-header {
+    padding: 1rem;
+  }
+  
+  .components {
+    padding: 1rem;
+  }
+  
+  .components > li > a {
+    padding: 1rem;
+    color: var(--dark);
+  }
+  
+  #sidebar.active {
+    left: 0;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+  }
+  
+  .overlay {
+    display: none;
+    position: fixed;
+    /* full screen */
+    width: 100vw;
+    height: 100vh;
+    /* transparent black */
+    background: rgba(0, 0, 0, 0.3);
+    /* middle layer, i.e. appears below the sidebar */
+    z-index: 998;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    /* animate the transition */
+    transition: all 0.5s ease-in-out;
+  }
+  /* display .overlay when it has the .active class */
+  .overlay.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  #dismiss {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    /* top right corner of the sidebar */
+    top: 10px;
+    right: 10px;
+  }
