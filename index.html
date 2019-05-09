@@ -20,14 +20,15 @@
 <body>
   <!-- start Navbar -->
   <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark scrolling-navbar">
-        <button type="button" id="sidebarCollapse" class="button">
-                <i class="fas fa-align-left"></i>
-            </button>
-    <div class="container">  
-
+       
+    <div class="container-fluid">  
+      
+        <button type="button" id="sidebarCollapse" class="btn btn-dark">
+            <i class="fas fa-bars"></i>
+         </button>
       <!-- logo -->
-      <a class="navbar-brand mx-auto waves-effect" href="index.php">
-        <img src="images/white-logo.png" style="height:50px;display:block;">
+      <a class="navbar-brand mx-auto waves-effect wow fadeIn" href="index.php">
+        <img src="images/fsu_logo.png" style="margin-right:2em;height:55px;display:block;">
       </a>
 
 <!-- Dark Overlay element -->
@@ -35,26 +36,99 @@
 
 <!-- Sidebar -->
 <div id="sidebar">
-    <button id="dismiss" class="btn">
-            <i class="material-icons">close</i>
-        </button>
-    <div class="sidebar-header bg-success">
-      <h5>Menu</h5>
+    
+    <div class="sidebar-header">
+      <h3 class="display-5 wow fadeIn">Menu</h3>
     </div>
-    <ul class="list-unstyled components">
-      <li>
-        <a href="#">Home</a>
-      </li>
-      <li>
-        <a href="#">About Us</a>
-      </li>
-      <li>
-        <a href="#">How it works</a>
-      </li>
-      <li>
-        <a href="#">FAQ</a>
-      </li>
-    </ul>
+    <!--accordian menu-->
+    <div id="accordion">
+      <!--Events-->
+        <div>
+          <div id="headingOne">
+            <h5 class="mb-0">
+              <button class="wow fadeIn btn btn-dark btn-block collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                Events
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div>
+                <a href="add_event"><button class="wow fadeIn btn btn-light btn-block">Add an Event</button></a>
+
+                <a href="select_event"><button class="wow fadeIn btn btn-light btn-block">Edit/Delete an Event</button></a>
+            </div>
+          </div>
+        </div>
+         <!--/Events-->
+
+          <!--Banners-->
+        <div>
+            <div id="headingTwo">
+              <h5 class="mb-0">
+                <button class="wow fadeIn btn btn-dark btn-block collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  Banners
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+              <div>
+                  <a href="banner_management"><button class="wow fadeIn btn btn-light btn-block">Add a Banner</button></a>
+  
+                  <a href="select_banner"><button class="wow fadeIn btn btn-light btn-block">Edit/Delete a Banner</button></a>
+              </div>
+            </div>
+          </div>
+           <!--/Baners-->
+
+        <!--Coupons-->
+        <div>
+            <div id="headingThree">
+              <h5 class="mb-0">
+                <button class="wow fadeIn btn btn-dark btn-block collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                  Coupons
+                </button>
+              </h5>
+            </div>
+        
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div>
+                  <a href="coupon_client_management"><button class="wow fadeIn btn btn-light btn-block">Add a Client</button></a>
+  
+                  <a href="select_coupon_client"><button class="wow fadeIn btn btn-light btn-block">Edit/Delete a Client</button></a>
+
+                  <a href="coupon_campaign_management"><button class="wow fadeIn btn btn-light btn-block">Add a Campaign</button></a>
+
+                  <a href="select_coupon_campaign"><button class="wow fadeIn btn btn-light btn-block">Edit/Delete a Campaign</button></a>
+              </div>
+            </div>
+          </div>
+           <!--/Coupons-->    
+
+ <!--Contests-->
+ <div>
+    <div id="headingFour">
+      <h5 class="mb-0">
+        <button class="wow fadeIn btn btn-dark btn-block collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+          Contests
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      <div>
+          <a href="contest_management"><button class="wow fadeIn btn btn-light btn-block">Pick a Winner</button></a>
+
+      </div>
+    </div>
+  </div>
+   <!--/Contests-->  
+
+   <a href="logout"><button class="wow fadeIn btn btn-dark btn-block">Logout</button></a>
+
+        <!--/accordian-->
+      </div>
  
   </div>
    </div>
@@ -62,42 +136,22 @@
   <!-- Navbar -->
 
 
-  <!--Carousel header Wrapper-->
-  <div id="carousel-example-1z" class="carousel slide pt-4" data-ride="carousel">
-    <div class="carousel-inner">
- <!--top banner-->
-      <div class="carousel-item active">
-        <div class="view" style="background-image: url('images/top.png'); background-repeat: no-repeat; background-size: cover;">
-
-          <!-- Mask & flexbox options-->
-          <div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
-
-            <!-- Content -->
-            <div class="text-center black-text mx-5 my-5 wow fadeIn">
-              
-              <h1 class="mt-5 display-4 text-light">
-                <strong>A Title Could Go Here</strong>
-              </h1>
-            </div>
-            <!-- Content -->
-          </div>
-          <!-- Mask & flexbox options-->
-        </div>
-      </div>
-      <!--/banner-->
-    </div>
-  </div>
-  <!--/.Carousel Wrapper-->
-  <!--end Header area-->
+  
 
 
   <!--start main content area-->
   <main>
-    <div class="container-fluid main-content">
-<div class="row-fluid py-4">
-  <h1 class="display-4 pt-4">A header</h1>
+    <div class="container-fluid main-content py-4 pt-4 wow fadeIn mt-5">
+
+<div class="row-fluid  wow fadeIn">
+  <h1 class="display-4 wow fadeIn">A header</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dui sit amet massa aliquet mattis et sit amet libero. Mauris efficitur libero in viverra volutpat. Suspendisse efficitur, nulla at tempus laoreet, justo velit dictum elit, finibus tempor erat ex sed arcu. Integer malesuada, ligula ac vestibulum efficitur, sapien libero luctus massa, sit amet lobortis mauris dui a justo. Nulla facilisi. Curabitur ac lacinia nunc. Praesent auctor lacus ac nunc aliquam, ac pulvinar magna hendrerit. In lorem lacus, bibendum vitae sem nec, porttitor lacinia urna. In tristique auctor molestie. Phasellus ac augue nibh. Nulla et egestas risus. Suspendisse non sapien a erat sodales mollis. Pellentesque vehicula mollis sapien vitae laoreet. In vestibulum tempor velit. Nam scelerisque varius purus, eu semper ipsum convallis at. Ut a ex nunc.</p>
 </div>
+
+<div class="row-fluid wow fadeIn">
+    <h1 class="display-4 wow fadeIn">A header</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dui sit amet massa aliquet mattis et sit amet libero. Mauris efficitur libero in viverra volutpat. Suspendisse efficitur, nulla at tempus laoreet, justo velit dictum elit, finibus tempor erat ex sed arcu. Integer malesuada, ligula ac vestibulum efficitur, sapien libero luctus massa, sit amet lobortis mauris dui a justo. Nulla facilisi. Curabitur ac lacinia nunc. Praesent auctor lacus ac nunc aliquam, ac pulvinar magna hendrerit. In lorem lacus, bibendum vitae sem nec, porttitor lacinia urna. In tristique auctor molestie. Phasellus ac augue nibh. Nulla et egestas risus. Suspendisse non sapien a erat sodales mollis. Pellentesque vehicula mollis sapien vitae laoreet. In vestibulum tempor velit. Nam scelerisque varius purus, eu semper ipsum convallis at. Ut a ex nunc.</p>
+  </div>
 
     </div>
   </main>
