@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>FSU Backend</title>
+  
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <!-- Bootstrap core CSS -->
@@ -23,9 +23,14 @@
        
     <div class="container-fluid">  
       
-        <button type="button" id="sidebarCollapse" class="btn btn-dark">
+
+         
+    
+      <button type="button" id="sidebarCollapse" class="btn btn-dark">
             <i class="fas fa-bars"></i>
          </button>
+
+
       <!-- logo -->
       <a class="navbar-brand mx-auto waves-effect wow fadeIn" href="index.php">
         <img src="images/fsu_logo.png" style="margin-right:2em;height:55px;display:block;">
@@ -74,7 +79,7 @@
         
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
               <div>
-                  <a href="banner_management"><button class="wow fadeIn btn btn-light btn-block">Add a Banner</button></a>
+                  <a href="banner_management.php"><button class="wow fadeIn btn btn-light btn-block">Add a Banner</button></a>
   
                   <a href="select_banner"><button class="wow fadeIn btn btn-light btn-block">Edit/Delete a Banner</button></a>
               </div>
@@ -144,44 +149,3 @@
     <div class="container-fluid main-content py-4 pt-4 wow fadeIn mt-5">
 
 <div class="row-fluid  wow fadeIn">
-  <h1 class="display-4 wow fadeIn">A header</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dui sit amet massa aliquet mattis et sit amet libero. Mauris efficitur libero in viverra volutpat. Suspendisse efficitur, nulla at tempus laoreet, justo velit dictum elit, finibus tempor erat ex sed arcu. Integer malesuada, ligula ac vestibulum efficitur, sapien libero luctus massa, sit amet lobortis mauris dui a justo. Nulla facilisi. Curabitur ac lacinia nunc. Praesent auctor lacus ac nunc aliquam, ac pulvinar magna hendrerit. In lorem lacus, bibendum vitae sem nec, porttitor lacinia urna. In tristique auctor molestie. Phasellus ac augue nibh. Nulla et egestas risus. Suspendisse non sapien a erat sodales mollis. Pellentesque vehicula mollis sapien vitae laoreet. In vestibulum tempor velit. Nam scelerisque varius purus, eu semper ipsum convallis at. Ut a ex nunc.</p>
-</div>
-
-<div class="row-fluid wow fadeIn">
-    <h1 class="display-4 wow fadeIn">A header</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut dui sit amet massa aliquet mattis et sit amet libero. Mauris efficitur libero in viverra volutpat. Suspendisse efficitur, nulla at tempus laoreet, justo velit dictum elit, finibus tempor erat ex sed arcu. Integer malesuada, ligula ac vestibulum efficitur, sapien libero luctus massa, sit amet lobortis mauris dui a justo. Nulla facilisi. Curabitur ac lacinia nunc. Praesent auctor lacus ac nunc aliquam, ac pulvinar magna hendrerit. In lorem lacus, bibendum vitae sem nec, porttitor lacinia urna. In tristique auctor molestie. Phasellus ac augue nibh. Nulla et egestas risus. Suspendisse non sapien a erat sodales mollis. Pellentesque vehicula mollis sapien vitae laoreet. In vestibulum tempor velit. Nam scelerisque varius purus, eu semper ipsum convallis at. Ut a ex nunc.</p>
-  </div>
-
-    </div>
-  </main>
-  <!--Main content-->
-
-
-  <!--Footer-->
-  <footer class="page-footer bg-dark text-center wow fadeIn">
-    <section class="footer-copyright py-3">
-      Footer stuff
-    </div>
-  </footer>
-  <!--/.Footer-->
-
-
-<!-- SCRIPTS -->
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.7/js/mdb.min.js"></script>
-<!--main javascript-->
-<script type="text/javascript" src="js/main.js"></script>
-  <!-- Initializations -->
-  <script type="text/javascript">
-    // Animations initialization
-    new WOW().init();
-  </script>
-</body>
-</html>

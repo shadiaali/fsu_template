@@ -1,0 +1,23 @@
+- header and footer includes 
+- menu is hidden unless user is logged in
+
+
+- Make the header (logo and menu) an include file
+- make the footer a separate include file (I know there is nothing there yet, but eventually there might be)
+
+
+index.php
+
+This is the login page. The bottom of the code is pretty straightforward. I usually set a variable called mode and assign it value of whatever is the querystring value of mode is.
+So I set the form action to, for example, index?mode=1. Then assign that querystring value to the mode variable. Then I have a section that executes if mode is equal to 1, which checks to make sure required values are filled, inserts/updates the database, sets session variables, etc.
+
+For this admin area, I don't store logins in a database, I just hardcode one in. Once the form submits it checks to see if what they inputted matches the hardcoded values.
+
+if it does it sets a session value. All subsequent pages in the admin area then check to see if that session value has been set. If it has not it, it redirects back to the login page.
+
+
+banner_management.php
+
+This page I use to control which ad banners are displayed on the FSU website. For now don't worry about saving to the database. Next week we can setup a test database for you, but I have not had time to do that yet. It will also need to be converted to use prepared SQL statements rather than directly referencing the variable names, but we can get to that next week. The .config file referenced holds database connection info, so for now it can be commented out.
+For now please just ensure All fields are filled in, and that images uploaded are either 728 x 90 or 160 x 600.
+
