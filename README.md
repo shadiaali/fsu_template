@@ -11,7 +11,7 @@ The front-end back-end template for the FSU site. Taking the forms from the old 
 
 * *Focus on learning arrays and mysqli prepared statements*
 
-**banner_management.php**
+## **banner_management.php**
 * Set up test db/config
 * Convert to use prepared sql statements instead of directly referencing the variable names
 * Ensure all fields are filled in/required 
